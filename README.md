@@ -1,6 +1,10 @@
 # 2x2_Display_ESP32_Software
 
+<img src= "https://cdn.shopify.com/s/files/1/1217/2104/files/Main_ESP32_Banner.png?v=1720594391" />
 
+The Quad Display Board features four displays in a single board Powered by ESP32 S3 WROOM-1, offering unparalleled flexibility and functionality for your creative endeavors. With options for both a 1.28" Round Display and a 1.54" Square Display, you have the freedom to choose the perfect size for your project needs. 
+
+This Github provides getting started instruction for 2x2 Display with ESP32.
 
 
 ## Related Products  
