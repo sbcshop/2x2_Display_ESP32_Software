@@ -45,69 +45,68 @@ This Github provides getting started instruction for 2x2 Display with ESP32.
 
 ### Interfacing Details
 
-- **_Display interfacing with ESP32_**
+ - **_Display interfacing with ESP32_**
 	
-  | ESP32 | Display | Function |
-  |---|---|---|
-  | IO12 | LCD1_CLK | Clock pin of SPI interface for Display|
-  | IO11 | LCD1_DIN | MOSI (Master OUT Slave IN) pin of SPI interface|
-  | IO9  | LCD1_CS | Chip Select pin of SPI interface|
-  | IO13 | LCD1_DC| Data/Command (MISO) pin of SPI interface|
-  | IO45 | LCD_BL | Backlight of display|
+   | ESP32 | Display | Function |
+   |---|---|---|
+   | IO12 | LCD1_CLK | Clock pin of SPI interface for Display|
+   | IO11 | LCD1_DIN | MOSI (Master OUT Slave IN) pin of SPI interface|
+   | IO9  | LCD1_CS | Chip Select pin of SPI interface|
+   | IO13 | LCD1_DC| Data/Command (MISO) pin of SPI interface|
+   | IO45 | LCD_BL | Backlight of display|
 	
-  | ESP32 | Display | Function |
-  |---|---|---|
-  | IO15 | LCD2_CLK | Clock pin of SPI interface for Display|
-  | IO6  | LCD2_DIN | MOSI (Master OUT Slave IN) pin of SPI interface|
-  | IO21 | LCD2_CS | Chip Select pin of SPI interface|
-  | IO7  | LCD2_DC| Data/Command (MISO) pin of SPI interface|
-  | IO45 | LCD_BL | Backlight of display|
+   | ESP32 | Display | Function |
+   |---|---|---|
+   | IO15 | LCD2_CLK | Clock pin of SPI interface for Display|
+   | IO6  | LCD2_DIN | MOSI (Master OUT Slave IN) pin of SPI interface|
+   | IO21 | LCD2_CS | Chip Select pin of SPI interface|
+   | IO7  | LCD2_DC| Data/Command (MISO) pin of SPI interface|
+   | IO45 | LCD_BL | Backlight of display|
 	
-  | ESP32 | Display | Function |
-  |---|---|---|
-  | IO14 | LCD3_CLK | Clock pin of SPI interface for Display|
-  | IO8  | LCD3_DIN | MOSI (Master OUT Slave IN) pin of SPI interface|
-  | IO48 | LCD3_CS | Chip Select pin of SPI interface|
-  | IO47 | LCD3_DC| Data/Command (MISO) pin of SPI interface|
-  | IO45 | LCD_BL | Backlight of display|
+   | ESP32 | Display | Function |
+   |---|---|---|
+   | IO14 | LCD3_CLK | Clock pin of SPI interface for Display|
+   | IO8  | LCD3_DIN | MOSI (Master OUT Slave IN) pin of SPI interface|
+   | IO48 | LCD3_CS | Chip Select pin of SPI interface|
+   | IO47 | LCD3_DC| Data/Command (MISO) pin of SPI interface|
+   | IO45 | LCD_BL | Backlight of display|
 	
-	| ESP32 | Display | Function |
-  |---|---|---|
-  | IO18 | LCD4_CLK | Clock pin of SPI interface for Display|
-  | IO16 | LCD4_DIN | MOSI (Master OUT Slave IN) pin of SPI interface|
-  | IO10 | LCD4_CS | Chip Select pin of SPI interface|
-  | IO17 | LCD4_DC| Data/Command (MISO) pin of SPI interface|
-  | IO45 | LCD_BL | Backlight of display|
+   | ESP32 | Display | Function |
+   |---|---|---|
+   | IO18 | LCD4_CLK | Clock pin of SPI interface for Display|
+   | IO16 | LCD4_DIN | MOSI (Master OUT Slave IN) pin of SPI interface|
+   | IO10 | LCD4_CS | Chip Select pin of SPI interface|
+   | IO17 | LCD4_DC| Data/Command (MISO) pin of SPI interface|
+   | IO45 | LCD_BL | Backlight of display|
 	
  - **_Type C UART Serial USB Interface_**
-     | ESP32 | USB To TTL (Serial) | Description | 
-     |---|---|---|
-     | TXD0/IO43 | RXD | UART communication pin |
-     | RXD0/IO44 | TXD | UART communication pin |
+   | ESP32 | USB To TTL (Serial) | Description | 
+   |---|---|---|
+   | TXD0/IO43 | RXD | UART communication pin |
+   | RXD0/IO44 | TXD | UART communication pin |
 	 
 
  - **_Type C Native USB Interface_**
-     | ESP32 | Native USB | Description | 
-     |---|---|---|
-     | IO19 | D- | USB Communication pin |
-     | IO20 | D+ | USB Communication pin |
+   | ESP32 | Native USB | Description | 
+   |---|---|---|
+   | IO19 | D- | USB Communication pin |
+   | IO20 | D+ | USB Communication pin |
 	 
   
 - **_BME280 & DS3231 RTC I2C Interfacing_**
-    | ESP32 | Hardware | Hardware | Function |
-    |---|---|---|---|
-    |IO39 | BME280_SCL | RTC_SCL | I2C Serial Clock |
-    |IO38 | BME280_SDA  | RTC_SDA | I2C Data pin |
+  | ESP32 | Hardware | Hardware | Function |
+  |---|---|---|---|
+  |IO39 | BME280_SCL | RTC_SCL | I2C Serial Clock |
+  |IO38 | BME280_SDA  | RTC_SDA | I2C Data pin |
   
 - **_Buttons & Buzzer Interfacing_**
-    | ESP32 | Hardware | Function |
-    |---|---|---|
-    |IO0 | BOOT |Boot button |
-    |IO4 | BT1 | Programmable Button |
-    |IO5 | BT2 | Programmable Button |
-	|IO40 | Buzzer | Buzzer control pin |
+  | ESP32 | Hardware | Function |
+  |---|---|---|
+  |IO0 | BOOT |Boot button |
+  |IO4 | BT1 | Programmable Button |
+  |IO5 | BT2 | Programmable Button |
+  |IO40 | Buzzer | Buzzer control pin |
 	
-  
 - **_GPIOs Breakout_**
   
   | ESP32 | Type* | Multi-Function (_**Bold-Italic**_ default Function) |
@@ -119,7 +118,44 @@ This Github provides getting started instruction for 2x2 Display with ESP32.
   
   *I-INPUT, O-OUTPUT, P-POWER & T-HIGH IMPEDENCE
 
+### 1. Configure and Setup Development Environment
+   - Download Arduino IDE from [official site](https://www.arduino.cc/en/software) and install into your system. We have use Arduino IDE 1.8.19
+   - Once installation done will add ESP32 S3 board support into IDE, for this first you need to add below link into preference:
+     
+     ```
+     https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+     ```
+     
+     Select File > Preference, and add link as show in below image,
+      <img src= "https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/preference_board.gif" />
+      
+   - Now will install ESP32 based boards as shown in below image,
 
+     <img src= "https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/install_ESP32boards.gif" />
+     
+   - You have two options to program onboard ESP32 of 2x2 display board, **_UART USB_** OR **_Native USB_**.
+   - When using Native USB, you will have to press BOOT button and then connect Type C. For UART USB no need, directly connect USB. 
+   - Once done (for UART USB), keeping default settings select the ESP32S3 Dev Module with suitable com port (may be different in your case) as shown below,
+
+     <img src="https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/select_esp32_with_comport.gif">
+ 
+     
+### 2. Installing Libraries
+   - Download [library zip file]() provided here in github.
+   - Extract and copy files inside Document > Arduino > Libraries folder. Make sure to restart Arduino IDE whenever you update or add any libraries.
+
+     <img src= "https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/library_files_path.png" />
+     
+### 3. Testing First Code
+   - At this step you are all set to test codes, for easy getting started we have provided various demo [example codes]() in github which you can download and try.
+   - Make sure to use relevant example code for your specific board:
+     - [For 1.54" Square Examples]()
+     - [For 1.28" Round Examples]()
+   - Open one example code in Arduino and make sure you have selected correct board with suitable com port, click on upload button to transfer code on ESP32 of 2x2 Display board.
+     <img src="https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/upload_process.gif">
+   - Checkout other examples below and build your own custom program codes using those references.
+
+     
 ## Resources
   * [Schematic](https://github.com/sbcshop/2x2_Display_ESP32_Hardware/blob/main/Design%20Data/SCH%202x2%20Display%20ESP32.pdf)
   * [Hardware Files](https://github.com/sbcshop/2x2_Display_ESP32_Hardware)
