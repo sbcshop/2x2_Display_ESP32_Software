@@ -78,7 +78,16 @@ This Github provides getting started instruction for 2x2 Display with ESP32.
    | IO10 | LCD4_CS | Chip Select pin of SPI interface|
    | IO17 | LCD4_DC| Data/Command (MISO) pin of SPI interface|
    | IO45 | LCD_BL | Backlight of display|
-	
+
+ - **__SDcard Interface__**
+   | ESP32 | SDCard | Function |
+   |---|---|---|
+   | IO42 | CARD_CLK | Clock pin of SPI interface for Display|
+   | IO2  | CARD_MOSI | MOSI (Master OUT Slave IN) pin of SPI interface|
+   | IO41 | CARD_MISO  | MISO (Master IN Slave OUT) pin of SPI interface|
+   | IO1  | CARD_CS  | Chip Select pin of SPI interface|
+   
+   
  - **_Type C UART Serial USB Interface_**
    | ESP32 | USB To TTL (Serial) | Description | 
    |---|---|---|
