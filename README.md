@@ -21,7 +21,7 @@ This Github provides getting started instruction for 2x2 Display with ESP32.
 - Buzzer which helps to add audio alert for your project
 
 ## Specification:
-- **Microcontroller**: ESP32 S3 WROOM-1, Xtensa® dual-core 32-bit LX7 microprocessor
+- **Microcontroller**: [ESP32 S3 WROOM-1](https://github.com/sbcshop/2x2_Display_ESP32_Software/blob/main/Documents/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf), Xtensa® dual-core 32-bit LX7 microprocessor
 - **Connectivity**: 2.4 GHz Wi-Fi (802.11 b/g/n) and Bluetooth® 5 (LE) 
 - **Memory**: Flash up to 16 MB, PSRAM up to 8 MB
 - **Supply Voltage**: 5V
@@ -33,8 +33,8 @@ This Github provides getting started instruction for 2x2 Display with ESP32.
 - **Display colors**: 65K RGB
 - **Display interface**: SPI
 - **Display Driver**: ST7789V (Square), GC9A01A (Round)
-- **Sensor**: BME280 for Temperature, Pressure & Relative Humidity
-- **RTC Chip**: DS3231SN
+- **Sensor**: [BME280](https://github.com/sbcshop/2x2_Display_ESP32_Software/blob/main/Documents/BME280-Datasheet.pdf) for Temperature, Pressure & Relative Humidity
+- **RTC Chip**: [DS3231SN](https://github.com/sbcshop/2x2_Display_ESP32_Software/blob/main/Documents/ds3231.pdf)
 - **RTC Battery Holder**: Supports CR1220 3V Battery 
 - **Operating Temperature Range**: -20°C ~ +70°C 
 
@@ -55,7 +55,7 @@ This Github provides getting started instruction for 2x2 Display with ESP32.
   * [Step File](https://github.com/sbcshop/2x2_Display_ESP32_Hardware/blob/main/Mechanical%20Data/2x2%20Display%20ESP32.step)
   * [Getting Started with ESP32 in Arduino](https://docs.espressif.com/projects/arduino-esp32/en/latest/)
   * [ESP32 S3 Hardware Reference](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/hw-reference/index.html)
-  * [ESP32 S3 Datasheet](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Capacitive_Software/blob/main/documents/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf)
+  * [ESP32 S3 Datasheet](https://github.com/sbcshop/2x2_Display_ESP32_Software/blob/main/Documents/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf)
   * [Arduino IDE 1 overview](https://docs.arduino.cc/software/ide-v1/tutorials/Environment)
     
 ## Related Products  
