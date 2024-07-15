@@ -45,8 +45,79 @@ This Github provides getting started instruction for 2x2 Display with ESP32.
 
 ### Interfacing Details
 
+- **_Display interfacing with ESP32_**
+	
+  | ESP32 | Display | Function |
+  |---|---|---|
+  | IO12 | LCD1_CLK | Clock pin of SPI interface for Display|
+  | IO11 | LCD1_DIN | MOSI (Master OUT Slave IN) pin of SPI interface|
+  | IO9  | LCD1_CS | Chip Select pin of SPI interface|
+  | IO13 | LCD1_DC| Data/Command (MISO) pin of SPI interface|
+  | IO45 | LCD_BL | Backlight of display|
+	
+  | ESP32 | Display | Function |
+  |---|---|---|
+  | IO15 | LCD2_CLK | Clock pin of SPI interface for Display|
+  | IO6  | LCD2_DIN | MOSI (Master OUT Slave IN) pin of SPI interface|
+  | IO21 | LCD2_CS | Chip Select pin of SPI interface|
+  | IO7  | LCD2_DC| Data/Command (MISO) pin of SPI interface|
+  | IO45 | LCD_BL | Backlight of display|
+	
+  | ESP32 | Display | Function |
+  |---|---|---|
+  | IO14 | LCD3_CLK | Clock pin of SPI interface for Display|
+  | IO8  | LCD3_DIN | MOSI (Master OUT Slave IN) pin of SPI interface|
+  | IO48 | LCD3_CS | Chip Select pin of SPI interface|
+  | IO47 | LCD3_DC| Data/Command (MISO) pin of SPI interface|
+  | IO45 | LCD_BL | Backlight of display|
+	
+	| ESP32 | Display | Function |
+  |---|---|---|
+  | IO18 | LCD4_CLK | Clock pin of SPI interface for Display|
+  | IO16 | LCD4_DIN | MOSI (Master OUT Slave IN) pin of SPI interface|
+  | IO10 | LCD4_CS | Chip Select pin of SPI interface|
+  | IO17 | LCD4_DC| Data/Command (MISO) pin of SPI interface|
+  | IO45 | LCD_BL | Backlight of display|
+	
+ - **_Type C UART Serial USB Interface_**
+     | ESP32 | USB To TTL (Serial) | Description | 
+     |---|---|---|
+     | TXD0/IO43 | RXD | UART communication pin |
+     | RXD0/IO44 | TXD | UART communication pin |
+	 
 
+ - **_Type C Native USB Interface_**
+     | ESP32 | Native USB | Description | 
+     |---|---|---|
+     | IO19 | D- | USB Communication pin |
+     | IO20 | D+ | USB Communication pin |
+	 
   
+- **_BME280 & DS3231 RTC I2C Interfacing_**
+    | ESP32 | Hardware | Hardware | Function |
+    |---|---|---|---|
+    |IO39 | BME280_SCL | RTC_SCL | I2C Serial Clock |
+    |IO38 | BME280_SDA  | RTC_SDA | I2C Data pin |
+  
+- **_Buttons & Buzzer Interfacing_**
+    | ESP32 | Hardware | Function |
+    |---|---|---|
+    |IO0 | BOOT |Boot button |
+    |IO4 | BT1 | Programmable Button |
+    |IO5 | BT2 | Programmable Button |
+	|IO40 | Buzzer | Buzzer control pin |
+	
+  
+- **_GPIOs Breakout_**
+  
+  | ESP32 | Type* | Multi-Function (_**Bold-Italic**_ default Function) |
+  |---|---|---|
+  |3V3  | P     | Positive Supply, 3.3V |
+  |IO3  | I/O/T | RTC_GPIO3, _**GPIO3**_, TOUCH3, ADC1_CH2  |
+  |IO46 | I/O/T | _**GPIO46**_ |  
+  |GND  | P     | Supply Ground |
+  
+  *I-INPUT, O-OUTPUT, P-POWER & T-HIGH IMPEDENCE
 
 
 ## Resources
