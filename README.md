@@ -38,7 +38,26 @@ This Github provides getting started instruction for 2x2 Display with ESP32.
 - **RTC Battery Holder**: Supports CR1220 3V Battery 
 - **Operating Temperature Range**: -20°C ~ +70°C 
 
+## Getting Started with 2x2 Display Powered by ESP32 
+### Pinout
+<img src= "https://cdn.shopify.com/s/files/1/1217/2104/files/ESP32_PINOUT.png?v=1720594472" />
 
+
+### Interfacing Details
+
+
+  
+
+
+## Resources
+  * [Schematic](https://github.com/sbcshop/2x2_Display_ESP32_Hardware/blob/main/Design%20Data/SCH%202x2%20Display%20ESP32.pdf)
+  * [Hardware Files](https://github.com/sbcshop/2x2_Display_ESP32_Hardware)
+  * [Step File](https://github.com/sbcshop/2x2_Display_ESP32_Hardware/blob/main/Mechanical%20Data/2x2%20Display%20ESP32.step)
+  * [Getting Started with ESP32 in Arduino](https://docs.espressif.com/projects/arduino-esp32/en/latest/)
+  * [ESP32 S3 Hardware Reference](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/hw-reference/index.html)
+  * [ESP32 S3 Datasheet](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Capacitive_Software/blob/main/documents/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf)
+  * [Arduino IDE 1 overview](https://docs.arduino.cc/software/ide-v1/tutorials/Environment)
+    
 ## Related Products  
   * [2x2 Display with Pico W (Round)](https://shop.sb-components.co.uk/products/2x2-quad-display-board?variant=41538301427795)
 
