@@ -87,7 +87,7 @@ This Github provides getting started instruction for 2x2 Display with ESP32.
    | IO41 | CARD_MISO  | MISO (Master IN Slave OUT) pin of SPI interface|
    | IO1  | CARD_CS  | Chip Select pin of SPI interface|
    
-   
+<!--   
  - **_Type C UART Serial USB Interface_**
    | ESP32 | USB To TTL (Serial) | Description | 
    |---|---|---|
@@ -95,12 +95,12 @@ This Github provides getting started instruction for 2x2 Display with ESP32.
    | RXD0/IO44 | TXD | UART communication pin |
 	 
 
- - **_Type C Native USB Interface_**
+ - **_Type C Native ESP USB Interface_**
    | ESP32 | Native USB | Description | 
    |---|---|---|
    | IO19 | D- | USB Communication pin |
    | IO20 | D+ | USB Communication pin |
-	 
+-->	 
   
 - **_BME280 & DS3231 RTC I2C Interfacing_**
   | ESP32 | Hardware | Hardware | Function |
@@ -143,7 +143,7 @@ This Github provides getting started instruction for 2x2 Display with ESP32.
      <img src= "https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/install_ESP32boards.gif" />
      
    - You have two options to program onboard ESP32 of 2x2 display board, **_UART USB_** OR **_Native USB_**.
-   - When using Native USB, you will have to press BOOT button once and then connect Type C. For UART USB no need, directly connect USB.
+   - When using Native ESP USB, you will have to press BOOT button once and then connect Type C. For UART USB no need, directly connect USB.
 
      <img src="https://github.com/sbcshop/2x2_Display_ESP32_Software/blob/main/images/UART_connect.jpeg" width="384" height="363">
 
